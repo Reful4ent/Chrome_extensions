@@ -4,25 +4,20 @@
   "version": "1.0",
   "description": "Scroll down the page or scroll up as you wish",
   "icons": {
-    "16": "images/arrow-16.png",
-    "32": "images/arrow-32.png",
-    "48": "images/arrow-48.png",
-    "128": "images/arrow-128.png"
+    "16": "images/start-16.png",
+    "32": "images/start-32.png",
+    "48": "images/start-48.png",
+    "128": "images/start-128.png"
   },
   "action": {
+    "default_popup": "popup/popup.html",
     "default_icon": {
-      "16": "images/arrow-16.png",
-      "32": "images/arrow-32.png",
-      "48": "images/arrow-48.png",
-      "128": "images/arrow-128.png"
+      "16": "images/start-16.png",
+      "32": "images/start-32.png",
+      "48": "images/start-48.png",
+      "128": "images/start-128.png"
     }
   },
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "js": ["scripts/injectButton.js"],
-      "run_at": "document_start",
-      "world": "MAIN"
-    }
-  ]
+  "permissions": ["scripting", "activeTab"],
+  "background":{}
 }
