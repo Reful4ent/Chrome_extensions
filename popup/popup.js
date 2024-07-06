@@ -52,7 +52,7 @@ button_click.addEventListener("click",(e) => {
                 target: {tabId: tab.id, allFrames: true },
                 func: clickButton,
                 args: [inputButton.value],
-            }, onClickResult);
+            });
         } else {
             alert("no buttons");
         }
