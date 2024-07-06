@@ -55,7 +55,6 @@ button_click.addEventListener("click", (e) => {
             alert("no buttons");
         }
     })
-    const button = document.querySelectorAll()
 })
 
 function clickButton(inputText) {
