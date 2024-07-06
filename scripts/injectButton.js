@@ -9,7 +9,7 @@ const buttonScrollStyle =  {
 
 document.addEventListener('DOMContentLoaded', function() {
     const div = document.createElement('div');
-    const button = document.createElement("button-scroll");
+    const button = document.createElement("button");
     div.classList.add("button-container");
 
     //Применение стилей кнопки
