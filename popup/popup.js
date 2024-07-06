@@ -59,6 +59,6 @@ button_click.addEventListener("click", (e) => {
 })
 
 function clickButton(inputText) {
-    const button_temp = document.querySelector(`.${inputText}`);
+    const button_temp = document.querySelector(`${inputText}`);
     button_temp.click();
 }
