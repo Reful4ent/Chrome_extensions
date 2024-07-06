@@ -31,12 +31,12 @@ function grabButtons(){
 
 function onResult(frames) {
     const list = document.querySelector(".popup-form__button-lust");
-    const imageUrls = frames.map(frame=>frame.result)
+    const buttonsString = frames.map(frame=>frame.result)
         .reduce((r1,r2)=>r1.concat(r2));
     for(let i=0;i<imageUrls.length;i++){
         const item = document.createElement("option");
         item.value = i;
-        item.innerHTML = imageUrls[i];
+        item.innerHTML = buttonsString[i];
         list.appendChild(item);
     }
 }
